@@ -7,7 +7,40 @@
     --main-duration: 0.5s;
 }
 
+
 /* End Variables */
+.countdown {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.countdown span {
+    background: #10cab7;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .countdown span {
+        min-width: 140px;
+        font-size: 20px;
+    }
+}
 /* Start Global Rules */
 * {
     -webkit-box-sizing: border-box;
@@ -180,6 +213,7 @@ body {
     height: calc(100vh - 64px);
     position: relative;
 }
+
 .intro-text p {
     color: #ffffff;
     font-weight: bold;
@@ -187,6 +221,7 @@ body {
     word-spacing: 2px;
     font-size: large;
 }
+
 .landing .intro-text {
     position: absolute;
     left: 50%;
@@ -251,16 +286,18 @@ body {
 .services {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
-    
+
 }
+
 .col .srv .text p {
     font-weight: bolder;
     font-size: large;
     font-style: oblique;
-    font-feature-settings:"isol";
+    font-feature-settings: "isol";
     word-spacing: 2px;
     letter-spacing: 2px;
 }
+
 .services .services-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -367,8 +404,9 @@ body {
 .about {
     padding-top: var(--section-padding);
     padding-bottom: calc(var(--section-padding) + 60px);
-    
+
 }
+
 .work {
     text-align: center;
     margin-top: 20px;
@@ -528,11 +566,13 @@ body {
     margin-left: 10px;
     color: var(--secondary-color);
 }
+
 .social a {
     font-weight: bolder;
-    font-size:xx-large ;
+    font-size: xx-large;
     align-items: center;
 }
+
 @media (max-width: 767px) {
 
     .contact .info .label,
